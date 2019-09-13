@@ -1,11 +1,13 @@
-﻿/*
+﻿@charset "utf-8";
+@import "style.css";
+/*
    New Perspectives on HTML5 and CSS3, 7th Edition
    Tutorial 2
    Case Problem 3
    
    Civil War History Style Sheet
-   Author: 
-   Date:   
+   Author: Brandon Santizo
+   Date:   09/12/19
    
    Filename: cw_styles.css
 
@@ -14,8 +16,13 @@
 
 /* Structural Styles */
 
-
-
+html{
+   background-color: rgb(151, 151, 151);
+}
+body{
+   background-color: rgb(180, 180, 223);
+   font-family: Verdana, Geneva, sans-serif;
+}
 
 /* Body Header Styles */
 
