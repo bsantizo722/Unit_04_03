@@ -23,21 +23,73 @@ body{
    background-color: rgb(180, 180, 223);
    font-family: Verdana, Geneva, sans-serif;
 }
-
+h1, h2{
+   font-weight: normal;
+}
+nav a{
+text-decoration: none;
+}
+footer{
+   color: white;
+   background-color: rgb(101, 101, 101);
+   font-size: 0.8em;
+   padding-top: 1px;
+   padding-bottom: 1px;
+}
+/* this is changing the footer's backround image and text color as well 
+as its font size*/
 /* Body Header Styles */
 
-
-
+body > header{
+   background-color: rgb(97, 97, 211);
+}
+/*changed the header to the color white and to the font that 
+we downloaded from google fonts*/
+body > header > h1{ 
+   color: rgba(255, 255, 255, 0.8);
+   font-size: 4vw;
+   font-family: Limelight, cursive;
+   margin: 0px;
+}
+body header > h1 > span{
+   color: rgba(255, 255, 255, 0.4)
+}
 
 /* Navigation Styles */
 
-
-
+nav#mainlinks{
+   padding-top: 5px;
+   padding-bottom: 5px;
+}
+/*step 16 is changing the color of the visited and unvisited links to be white
+and not black making the step-out*/
+nav a:visited, nav a:link{
+   color: white;
+}
+/*this changes the color background of a link while its beimg hovered*/
+nav a:hover, nav a:active{
+   color: white;
+   opacity: 0.8;
+   background-color: rgba(51, 51, 51, 0.5);
+}
 
 /* Outline Styles */
 
-
-
+nav#outline{
+   color: rgb(51, 51, 51);
+   font-size: 0.8em;
+}
+nav > h1 {
+   text-align: center;
+}
+nav > ol{
+   line-height: 2em;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   margin-left: 5px;
+   margin-right: 5px;
+   list-style: upper-roman;
+}
 
 /* Section Styles */
 
