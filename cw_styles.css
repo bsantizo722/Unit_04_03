@@ -57,17 +57,17 @@ body header > h1 > span{
 
 /* Navigation Styles */
 
-nav#mainlinks{
+nav#mainLinks{
    padding-top: 5px;
    padding-bottom: 5px;
 }
 /*step 16 is changing the color of the visited and unvisited links to be white
 and not black making the step-out*/
-nav a:visited, nav a:link{
+nav#mainLinks a:visited, nav a:link{
    color: white;
 }
 /*this changes the color background of a link while its beimg hovered*/
-nav a:hover, nav a:active{
+nav#mainLinks a:hover, nav a:active{
    color: white;
    opacity: 0.8;
    background-color: rgba(51, 51, 51, 0.5);
@@ -88,18 +88,47 @@ nav > ol{
    margin-bottom: 0px;
    margin-left: 5px;
    margin-right: 5px;
-   list-style: upper-roman;
+   list-style-type: upper-roman;
 }
-
+/* steps 20-21 this changes the links color that are in the aside part.
+this alsochnages when the liks are hovered and an underline appears as hovered */
+nav > ol  ol{
+   list-style-type: upper-alpha;
+}
+nav#outline a:visited, nav a:link{
+   color: rgb(101, 101, 101);
+}
+nav#outline a:hover, nav a:active{
+   color: rgb(97, 97, 211);
+   text-decoration: underline;
+}
 /* Section Styles */
 
-
-
+section{
+   background-color: rgb(220, 220, 220);
+}
+section > header h1{
+   font-size: 2.2em;
+   padding-left: 10px;
+}
 
 /* Article Styles */
 
-
+article > h2{
+   font-size: 1.4em;
+}
+article > p:first-of-type::first-letter{
+   font-size: 2em;
+   text-align: vertical;
+}
 
 
 /* Aside Styles */
 
+aside{
+   font-size: 0.9em;
+}
+aside > h1{
+   font-size: 1.4em;
+   text-align: center;
+}
